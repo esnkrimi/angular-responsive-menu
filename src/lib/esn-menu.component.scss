@@ -1,0 +1,36 @@
+*:hover{
+    background-color:none !important;
+}
+a{
+    opacity: 80%;
+    text-transform: capitalize;
+}
+a:hover{
+    opacity: 100%;
+}
+.position-fixed{
+    left:0px;
+    top:0px;
+}
+.navbar-light{
+    width: 100%;
+}
+.navbar-light:before{
+    content: ' ';
+    position: absolute;
+    z-index: 50;
+    opacity: 50%;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width:100%;
+    animation: cross 1s forwards;
+}
+@keyframes cross {
+    from {
+        left:0px;
+    }
+
+    to{
+        left:100%;
+    }
+}
